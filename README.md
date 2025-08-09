@@ -2,7 +2,7 @@
 ### Authors
 - Aaron Miller, miller@cbs.mpg.de
 - Konstantin Weise, kweise@cbs.mpg.de (main contact)
-- Torge Worbs, torwo@dtu.dk 
+- Torge Worbs, torwo@dtu.dk (Root code of NEURON interface adapted with permission from [^fn1])
 
 ## Cloning Repo
 ```
@@ -51,7 +51,7 @@ simulations.
 ##### cells
 Contains `NeuronCell` subclasses for the studied cell subtypes. cells_hoc contains the cell morphologies, organized by 
 cell index (the cell indices used in this work are logged in the library `helper_functions/cell_type_lib.py`, dataclass
-attribute `CellType.cell_ids`)
+attribute `CellType.cell_ids`). Cell morphologies are recovered from [^fn2] with adaptations consistent with [^fn1] and [^fn3].
 ##### coil_recordings
 Contains TMS coil recordings for Mono/Biphasic TMS.
 ##### mechanisms
@@ -82,3 +82,10 @@ into `reference_data` in order for many scripts to function as expected:
 - `axon_kernels_precomputed'`: Contains precomputed AxonalDelayKernel objects archived into `.hdf5` files.
 - `dendritic_current`: Contains dendritic current gPC results (`.hdf5` and `.pkl`) as well as an extensive lookup table of dendritic currents at various electric field inputs for free gPC parameters chosen at their average values.
 
+## References
+
+[^fn1]: Konstantin Weise, Torge Worbs, Benjamin Kalloch, Victor H. Souza, Aurélien Tristan Jaquier, Werner Van Geit, Axel Thielscher, Thomas R. Knösche; Directional sensitivity of cortical neurons towards TMS-induced electric fields. Imaging Neuroscience 2023; 1 1–22. doi: https://doi.org/10.1162/imag_a_00036
+
+[^fn2]: Markram, H., Muller, E., Ramaswamy, S., Reimann, M. W., Abdellah, M., Sanchez, C. A., Ailamaki, A., Alonso-Nanclares, L., Antille, N., Arsever, S., Kahou, G. A., Berger, T. K., Bilgili, A., Buncic, N., Chalimourda, A., Chindemi, G., Courcol, J. D., Delalondre, F., Delattre, V., Druckmann, S., … Schürmann, F. (2015). Reconstruction and Simulation of Neocortical Microcircuitry. Cell, 163(2), 456–492. https://doi.org/10.1016/j.cell.2015.09.029
+
+[^fn3]: Aberra, A. S., Wang, B., Grill, W. M., & Peterchev, A. V. (2020). Simulation of transcranial magnetic stimulation in head model with morphologically-realistic cortical neurons. Brain stimulation, 13(1), 175–189. https://doi.org/10.1016/j.brs.2019.10.002

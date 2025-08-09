@@ -27,7 +27,7 @@ nrnivmodl
 ```
 
 ## Download Reference Data
-In order for many scripts to function, reference data folder called `Miller_2025` from the OSF directory () must be
+In order for many scripts to function, reference data folder called `Miller_2025` from the OSF directory DOI: 10.17605/OSF.IO/NXVDH (https://osf.io/nxvdh/) must be
 downloaded and dropped directly as a subfolder of `reference_data`.
 
 ## Repository Structure
@@ -74,7 +74,7 @@ directly used as inputs to dendritic delay simulations and for visualization
 
 ### reference_data
 Comes with reference data used from other research works, generated parameter files used in this work, and simulation 
-results from this work. The following folders and files are contained in `Miller_2025` must be downloaded from the OSF repository (*TODO*: LINK HERE) and dropped directly
+results from this work. The following folders and files are contained in `Miller_2025` must be downloaded from the OSF repository DOI: 10.17605/OSF.IO/NXVDH (https://osf.io/nxvdh/) and dropped directly
 into `reference_data` in order for many scripts to function as expected:
 `Miller_2025` should become a direct child of `reference_data`, and contains:
 

@@ -1,0 +1,13 @@
+name: coupling_model
+
+channels:
+  - conda-forge 
+
+dependencies:
+  - python=3.9
+  - gcc_linux-64
+  - gxx_linux-64
+  - matplotlib=3.5.1
+  - pip=21.2.4
+  - pip:
+    - -r requirements_pip.txt

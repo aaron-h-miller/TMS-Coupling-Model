@@ -1,0 +1,18 @@
+name: coupling_model
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.9
+  - gcc_linux-64
+  - gxx_linux-64
+  - matplotlib=3.5.1
+  - h5py=3.11.0
+  - NEURON=8.2.4
+  - numpy=1.26.4
+  - pandas=2.2.3
+  - scipy=1.13.1
+  - tqdm=4.66.5
+  - psutil=6.0.0
+  - pygpc=0.4.2
